@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetStatAnalyzer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f05d5c6bf5988ff056c7b447934eeedd0efc8fb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3ec41486594c591cc86fad9b6a64385b1391282")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetStatAnalyzer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetStatAnalyzer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
