@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GJjpmlvb5JzJUSPuEIy8JlwpM4OkbXRP6nqd4SlD3Ap8RWrPgIY+tNThg8gcGG5mp2f6CWT87R+IJd/NdbEasg==",
+  "dgSpecHash": "sog3jLCCfHA=",
   "success": true,
-  "projectFilePath": "C:\\GITHUB\\NetStatAnalyzer\\NetStatAnalyzer\\NetStatAnalyzer.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\GITHUB\\NetStatAnalyzer\\NetStatAnalyzer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\datax\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.1\\microsoft.win32.systemevents.9.0.1.nupkg.sha512",
+    "C:\\Users\\datax\\.nuget\\packages\\system.drawing.common\\9.0.1\\system.drawing.common.9.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

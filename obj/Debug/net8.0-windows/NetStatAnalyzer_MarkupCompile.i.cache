@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\GITHUB\NetStatAnalyzer\NetStatAnalyzer\obj\Debug\net8.0-windows\
+C:\GITHUB\NetStatAnalyzer\obj\Debug\net8.0-windows\
 NetStatAnalyzer
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\GITHUB\NetStatAnalyzer\NetStatAnalyzer\App.xaml
+C:\GITHUB\NetStatAnalyzer\App.xaml
 11407045341
 
 6408892251
-198155382431
+200-1566973946
 MainWindow.xaml;
 
-True
+False
 

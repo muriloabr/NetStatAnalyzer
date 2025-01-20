@@ -6,7 +6,51 @@
         xmlns:local="clr-namespace:NetStatAnalyzer"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
+        <!-- Filters Section -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0 0 0 10">
+            <Label Content="Protocol:" VerticalAlignment="Center" />
+            <TextBox x:Name="ProtocolTextBox" Width="100" Margin="5 0" />
+
+            <Label Content="State:" VerticalAlignment="Center" />
+            <ComboBox x:Name="StateComboBox" Width="100" Margin="5 0" SelectionChanged="StateComboBox_SelectionChanged" />
+
+            <Label Content="IP Filter:" VerticalAlignment="Center" />
+            <TextBox x:Name="IPTextBox" Width="150" Margin="5 0" />
+
+            <Button Content="Filter" Width="75" Margin="10 0" Click="FilterData_Click" />
+        </StackPanel>
+
+        <!-- Reapply Load Button -->
+        <Button Content="Reapply Load" Grid.Row="2" Height="30" Width="150" HorizontalAlignment="Left" Margin="0 10" Click="ReapplyLoad_Click"/>
+
+        <!-- DataGrid Section -->
+        <DataGrid x:Name="DataGrid" Grid.Row="1" ItemsSource="{Binding Entries}" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0 0 0 10">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Icon" Width="50">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding ProcessIcon}" Width="30" Height="30" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Protocol" Binding="{Binding Protocol}" Width="100" />
+                <DataGridTextColumn Header="Local Address" Binding="{Binding LocalAddress}" Width="200" />
+                <DataGridTextColumn Header="Foreign Address" Binding="{Binding ForeignAddress}" Width="200" />
+                <DataGridTextColumn Header="State" Binding="{Binding State}" Width="100" />
+                <DataGridTextColumn Header="PID" Binding="{Binding PID}" Width="75" />
+                <DataGridTextColumn Header="Process Name" Binding="{Binding ProcessName}" Width="150" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Open File Location Button -->
+        <Button x:Name="OpenFileLocationButton" Content="Open File Location" Grid.Row="2" Height="30" Width="150" HorizontalAlignment="Right" Click="OpenFileLocation_Click" />
     </Grid>
 </Window>
