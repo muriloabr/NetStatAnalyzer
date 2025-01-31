@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NetStatAnalyzer"
         mc:Ignorable="d"
+        Icon="assets/icon.png"
         Title="NetStatAnalyzer" Height="450" Width="800">
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -27,8 +28,8 @@
             <Button Content="Filter" Width="75" Margin="10 0" Click="FilterData_Click" />
         </StackPanel>
 
-        <!-- Reapply Load Button -->
-        <Button Content="Reapply Load" Grid.Row="2" Height="30" Width="150" HorizontalAlignment="Left" Margin="0 10" Click="ReapplyLoad_Click"/>
+        <!-- Reload Button -->
+        <Button Content="Reload" Grid.Row="2" Height="30" Width="150" HorizontalAlignment="Left" Margin="0 10" Click="Reload_Click"/>
 
         <!-- DataGrid Section -->
         <DataGrid x:Name="DataGrid" Grid.Row="1" ItemsSource="{Binding Entries}" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0 0 0 10">

@@ -204,7 +204,7 @@ namespace NetStatAnalyzer
                 try
                 {
                     var process = Process.GetProcessById(entry.PID);
-                    string path = process.MainModule?.FileName;
+                    string path = process.MainModule?.FileName ?? "";
                     if (!string.IsNullOrEmpty(path) && File.Exists(path))
                     {
                         Process.Start("explorer.exe", $"/select,\"{path}\"");
@@ -246,7 +246,7 @@ namespace NetStatAnalyzer
             FilterData_Click(sender, e);
         }
        
-        private void ReapplyLoad_Click(object sender, RoutedEventArgs e)
+        private void Reload_Click(object sender, RoutedEventArgs e)
         {
             LoadNetStatData();
         }
