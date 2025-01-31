@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NetStatAnalyzer"
         mc:Ignorable="d"
-        Icon="assets/icon.png"
+        Icon="assets/icon.ico"
         Title="NetStatAnalyzer" Height="450" Width="800">
     <Grid Margin="10">
         <Grid.RowDefinitions>
