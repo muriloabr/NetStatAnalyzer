@@ -16,6 +16,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Linq;
 using System.Drawing;
+using System.Reflection;
 
 namespace NetStatAnalyzer
 {  
@@ -38,6 +39,7 @@ namespace NetStatAnalyzer
             InitializeComponent();
             DataContext = this;
             LoadNetStatData();
+            LoadVersion();
         }
 
         private void LoadNetStatData()
@@ -249,6 +251,12 @@ namespace NetStatAnalyzer
         private void Reload_Click(object sender, RoutedEventArgs e)
         {
             LoadNetStatData();
+        }
+
+        private void LoadVersion()
+        {
+            var version = Assembly.GetExecutingAssembly().GetName().Version;
+            VersionTextBlock.Text = $"v{version}";
         }
     }
 }
