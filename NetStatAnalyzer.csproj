@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\icon.png" />
+    <None Remove="assets\icon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\icon.png" />
+    <Resource Include="assets\icon.png" />
   </ItemGroup>
 
 </Project>
