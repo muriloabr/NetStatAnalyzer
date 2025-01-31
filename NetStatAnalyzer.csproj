@@ -6,11 +6,19 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>assets\icon.ico</ApplicationIcon>
+    <Title>NetStatAnalyzer</Title>
+    <Version>$(VersionPrefix) 1.0.2</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="assets\icon.ico" />
     <None Remove="assets\icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +28,13 @@
   <ItemGroup>
     <Resource Include="assets\icon.ico" />
     <Resource Include="assets\icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
